@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Comcom-frontend-assignment
+## AI Chat (with API)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 실행 방법 (택 중 하나)
+- Git Clone 후, Terminal에 `npm install` 또는 `yarn` 입력 후, `node_modules` 폴더가 생성 되었다면 `npm start` 혹은 `yarn start` 로 실행
+- 배포가 진행되어 있는, https://j-myeong.netlify.app 접속
 
-## Available Scripts
+### 개발 환경 및 테스트 환경
+- 개발 환경
+  - Node: v16.15.0
+  - React.js: 18.2.0
+  - IDE: WebStorm 22.02.03
+- 테스트 환경
+  - PC: Chrome 107.0.5304.87 (arm64)
+  - Mobile
+    - Chrome Develop Tools
+    - Apple iPhone 14 Pro's Safari
+    
+### 구현 내용
+- `Figma` 를 통해 전달 받은 기본적인 Design 구현
+- `axios` 를 통해 API 호출 및 응답 처리 구현
+- 대화 전송 및 받기 기능 구현
+- 대화 내용 초기화 기능 구현
+- 추가적인 구현 내용
+  - 버튼 외에도 `Enter` 키를 통한 대화 전송 구현
+  - 대화 입력 시, Chat Loading Spinner 구현
+  - 대화 내용 전송을 통한 API 응답 대기 시, Chat Loading Spinner 구현
+  - 대화 내용 작성 또는 응답 대기 및 응답 도착 시, 하단으로 자동으로 스크롤 되도록 구현
+  - 반응형 웹사이트 구현
+- 구현한 화면은 아래 스크린샷을 통해 확인하실 수 있습니다.
 
-In the project directory, you can run:
+### 스크린샷
+- 메인 화면 
 
-### `yarn start`
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50445943/200176324-73f0073e-52ae-45ef-b7d1-0697e5c81037.png" />
+- 대화 입력 중, Spinner 작동
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50445943/200176384-42a13eb8-477a-4854-9170-6ccb9e99b1b4.png" />
+- 대화 전송 후 API 응답 대기 시, Spinner 작동
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50445943/200176440-8559b594-d578-4bab-80d0-66f0cc09cf77.png" />
+- API 응답 도출
 
-### `yarn test`
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50445943/200176459-aada4472-999a-4b52-8196-0e91c179d01e.png" />
+- `Clear Conversation` 클릭 시, Modal 표시
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50445943/200176484-e72c7f62-ea67-4476-98a7-43fa2299e0c1.png" />
+- `Clear` 클릭 시, 대화 내용 제거
 
-### `yarn build`
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/50445943/200176501-af1549bc-95ce-4e39-9c45-8ba2a53b1184.png" />
+- 그 외, 반응형 웹 사이트
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div>
+  <img width="348" alt="image" src="https://user-images.githubusercontent.com/50445943/200176545-59192254-7756-4deb-9afb-5c2a4d9821f3.png" />
+  <img width="348" alt="image" src="https://user-images.githubusercontent.com/50445943/200176583-db849c84-8cce-46b3-861d-303ba8a7d4f4.png" />
+</div>
