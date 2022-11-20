@@ -1,9 +1,8 @@
 # Comcom-frontend-assignment
 ## AI Chat (with API)
 
-### 실행 방법 (택 중 하나)
+### 실행 방법
 - Git Clone 후, Terminal에 `npm install` 또는 `yarn` 입력 후, `node_modules` 폴더가 생성 되었다면 `npm start` 혹은 `yarn start` 로 실행
-- 배포가 진행되어 있는, https://j-myeong.netlify.app 접속
 
 ### 개발 환경 및 테스트 환경
 - 개발 환경
